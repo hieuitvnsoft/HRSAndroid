@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">HRS</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="a_ch">Địa chỉ:</string>
+    <string name="email">Email:</string>
+    <string name="ng_y_sinh">Ngày sinh:</string>
+    <string name="ki_m_tra_n_h_ng">Kiểm tra đơn hàng</string>
+    <string name="logout">Logout</string>
+    <string name="h_v_t_n">Họ và tên:</string>
+    <string name="s_i_n_tho_i">Số điện thoại:</string>
+    <string name="gi_i_t_nh">Giới tính:</string>
+    <string name="ng_nh_p">Đăng nhập</string>
+    <string name="b_n_ch_a_ng_nh_p">Bạn chưa đăng nhập</string>
+</resources>

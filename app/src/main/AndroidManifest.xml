@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hrs">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Include following permission if you want to cache images on SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity_CheckOrder"></activity>
+        <activity android:name=".TestFragment" />
+        <activity android:name=".InforPaymentActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".UserFragment" />
+        <activity android:name=".ActivityProductDetail" />
+        <activity android:name=".CartFragment" />
+        <activity android:name=".HomeFragment" />
+        <activity
+            android:name=".MainActivity"
+            android:label="HieuRinShop" />
+        <activity android:name=".FlashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_light_background"
+    tools:context=".CartFragment">
+
+
+    <GridView
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/gridCard"
+        android:layout_width="match_parent"
+        android:layout_above="@id/tt"
+        android:layout_height="match_parent">
+
+
+    </GridView>
+
+<LinearLayout
+    android:id="@+id/tt"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_above="@id/bot"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền thanh toán:"
+        android:textSize="22sp"
+        android:textColor="#FFCCDD"/>
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2000000"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="#CCFFDD"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bot"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/payment"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán" />
+    </LinearLayout>
+</RelativeLayout>

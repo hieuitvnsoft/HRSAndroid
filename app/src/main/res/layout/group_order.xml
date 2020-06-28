@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn hàng số:  " />
+        <TextView
+            android:id="@+id/orderIdz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="###" />
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái:  " />
+        <TextView
+            android:id="@+id/statusOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="###"
+            android:textColor="#0025FF"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/t2"
+        android:layout_below="@id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày đặt hàng:  " />
+        <TextView
+            android:id="@+id/dateOrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="###" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền thanh toán:  " />
+    <TextView
+        android:id="@+id/totalAmountz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#CC00FF"
+        android:text="###"
+        android:gravity="right"/>
+    </LinearLayout>
+</RelativeLayout>

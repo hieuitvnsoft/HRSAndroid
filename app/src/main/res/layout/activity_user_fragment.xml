@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:focusableInTouchMode="false"
+    android:focusable="false"
+    tools:context=".UserFragment">
+
+
+    <LinearLayout
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:textColor="#E67E22"
+            android:gravity="center"
+            android:text="@string/b_n_ch_a_ng_nh_p" />
+
+        <Button
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/btnLogin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonlogin"
+            android:text="@string/ng_nh_p" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/userInfor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/font_xlarge"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/topImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:id="@+id/avatar"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/cogai" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topImg"
+            android:paddingTop="10dp"
+
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/h_v_t_n" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtName"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/name">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_ch" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAddrr"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/em"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addres"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEm"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/em"
+            android:paddingTop="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ng_y_sinh" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBirth"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sex"
+            android:paddingTop="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gi_i_t_nh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSexx"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/phone"
+
+            android:layout_below="@id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s_i_n_tho_i" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPhonee"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/checkOrder"
+
+            android:layout_below="@id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/checkOr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/ki_m_tra_n_h_ng"
+                android:clickable="true"
+                />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="#000CCC"
+            android:gravity="center"
+
+            android:text="@string/logout"
+
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>
